@@ -131,11 +131,11 @@
                     <div class="row mb-3">
                         <div class="col-md-6">
                             <label for="nome" class="form-label">Nome</label>
-                            <input type="text" class="form-control" id="nome" required />
+                            <input type="text" class="form-control border-2" id="nome" required />
                         </div>
                         <div class="col-md-6">
                             <label for="email" class="form-label">E-mail</label>
-                            <input type="email" class="form-control" id="email" required />
+                            <input type="email" class="form-control  border-2" id="email" required />
                         </div>
                     </div>
 
@@ -143,40 +143,32 @@
                     <div class="row mb-3">
                         <div class="col-md-6">
                             <label for="entrada" class="form-label">Data de Entrada</label>
-                            <input type="date" class="form-control" id="entrada" required />
+                            <input type="date" class="form-control border-2" id="entrada" required />
                         </div>
                         <div class="col-md-6">
                             <label for="saida" class="form-label">Data de Saída</label>
-                            <input type="date" class="form-control" id="saida" required />
+                            <input type="date" class="form-control border-2" id="saida" required />
                         </div>
                     </div>
 
                     <!-- Terceira linha: Observações -->
                     <div class="row mb-3">
-                        <div class="col-12">
+                        <div class="col-md-8">
                             <label for="observacoes" class="form-label">Observações</label>
-                            <textarea class="form-control" id="observacoes" rows="3"></textarea>
+                            <textarea class="form-control h-100 border-2" id="observacoes" rows="3"></textarea>
                         </div>
-                    </div>
-
-                    <!-- Quarta linha: Adultos e Crianças -->
-                    <div class="row mb-3">
-                        <div class="col-md-6">
-                            <label for="adultos" class="form-label">Adultos</label>
-                            <input type="number" class="form-control" id="adultos" min="1" value="1" />
-                        </div>
-                        <div class="col-md-6">
-                            <label for="criancas" class="form-label">Crianças</label>
-                            <input type="number" class="form-control" id="criancas" min="0" value="0" />
-                        </div>
-                    </div>
-
-                    <!-- Botão Enviar -->
-                    <div class="row">
-                        <div class="col text-end">
-                            <button type="submit" class="btn btn-primary btn-lg">
-                  Enviar
-                </button>
+                        <div class="col-md-4 d-flex flex-column">
+                            <div class="mt-2">
+                                <label for="adultos" class="form-label">Adultos</label>
+                                <input type="number" class="form-control border-2" id="adultos" min="1" value="1" />
+                            </div>
+                            <div class="mt-4">
+                                <label for="criancas" class="form-label">Crianças</label>
+                                <input type="number" class="form-control border-2" id="criancas" min="0" value="0" />
+                            </div>
+                            <div class="mt-3 d-flex justify-content-end">
+                                <button class="btn btn-primary me-5 mt-4">Confirmar</button>
+                            </div>
                         </div>
                     </div>
                 </form>
